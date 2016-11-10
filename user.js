@@ -1,9 +1,7 @@
-module.exports = user;
-
 var user = {
   name: "Cameron",
   location: "Provo",
-  occupations: ["Burgeoning developer"],
+  occupations: ["Burgeoning developer","Media Editor"],
   hobbies: [
     {
       name: "rock climbing",
@@ -20,18 +18,18 @@ var user = {
   ],
   family: [
     {
-      name: null,
-      relation: null,
-      gender: null
+      name: "White Person 1",
+      relation: "brother",
+      gender: "m"
     },
     {
-      name: null,
-      relation: null,
-      gender: null
+      name: "White Person 2",
+      relation: "brother",
+      gender: "m"
     },{
-      name: null,
-      relation: null,
-      gender: null
+      name: "White Person 3",
+      relation: "brother",
+      gender: "m"
     }
   ],
   restaurants: [
@@ -41,14 +39,16 @@ var user = {
       rating: 8
     },
     {
-      name: null,
-      type: null,
-      rating: null
+      name: "Slab Pizza",
+      type: "pizza",
+      rating: 8
     },
     {
-      name: null,
-      type: null,
-      rating: null
+      name: "Good Thyme",
+      type: "healthy",
+      rating: 8
     }
   ]
 }
+
+module.exports = user;

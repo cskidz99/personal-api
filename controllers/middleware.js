@@ -1,3 +1,5 @@
+var skillz = require('../skillz')
+
 module.exports = {
   addHeaders: function(req, res, next) {
     res.status(200).set({
@@ -11,5 +13,22 @@ module.exports = {
     });
 
     next();
-  }
+  },
+
+  generateId: function(req, res, next) {
+    req.body.id = skillz.length + 1;
+
+    next();
+  },
+
+  verifyUser: function(req,res,next){
+    if(req.params.username === "cskidz99" && req.params.pin === "1234"){
+      next();
+    } else {
+      res.status(200).json("You can't know my secrets!");
+    }
+  },
+
+
+
 }
